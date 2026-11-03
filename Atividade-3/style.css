@@ -203,6 +203,7 @@
 
 /* FOOTER */
     footer {
+        position: relative;
         background-color: #101010;
         border-top: 3px solid #8e302b;
         padding: 35px 25px;
@@ -228,6 +229,7 @@
     footer nav li {
         margin: 10px 0;
     }
+    
 
     footer p {
         color: #96918a;
@@ -235,7 +237,8 @@
         margin: 10px 0;
     }
 
-/* ANIMAÇÃO DOS CARDS */
+/* Animação dos Cards */
+    /*espero que esse conte como animação da atividade*/
     @keyframes surgir {
         from {
             opacity: 0;
