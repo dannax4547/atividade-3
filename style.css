@@ -1,3 +1,4 @@
+<<<<<<< HEAD:style.css
 /* GERAL */
     * {
         margin: 0;
@@ -292,4 +293,303 @@
         #ratoVideo {
             width: 100%;
         }
+=======
+/* GERAL */
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #171717;
+        color: #e0ded8;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    b {
+        color: #d6b36a;
+    }
+
+    .laranja {
+        color: rgb(249, 178, 23);
+    }
+
+    a {
+        color: #d6b36a;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    a:hover {
+        color: #d6b36a;
+        text-decoration: underline;
+    }
+
+/* HEADER com FlexBox */
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        background-color: #1e1e1e;
+        padding: 40px 20px;
+        border-bottom: 3px solid #8e302b;
+    }
+
+    header h1 {
+        color: #d6b36a;
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 40px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    header img {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 5px;
+    }
+
+/* Parágrafos do cabeçalho ocupam uma linha inteira */
+    header p {
+        flex-basis: 100%;
+        margin: 8px 0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+/* MAIN */
+    main {
+        margin: 20px auto;
+        width: 1100px;
+        max-width: 100%;
+        padding: 0 30px;
+    }
+
+    main h2 {
+        color: #d6b36a;
+        font-size: 1.8rem;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #71312d;
+        padding-bottom: 5px;
+    }
+
+    #porquejogar {
+        color: #e0b76c;
+        text-transform: uppercase;
+    }
+
+    main h3 {
+        color: #da7d20;
+        font-size: 1.35rem;
+        margin-top: 30px;
+        margin-bottom: 12px;
+    }
+
+    main p {
+        text-indent: 12px;
+        margin: 12px auto;
+        text-align: justify;
+    }
+
+    main img,
+    main video {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px 0;
+        border-radius: 5px;
+        border: 1px solid #51443a;
+    }
+
+/* RATO REI */
+    .ratoRei {
+        margin: 0 auto 20px;
+        width: 36%;
+    }
+
+    .ratoRei h3 {
+        font-family: "Russo One", sans-serif;
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 0;
+    }
+
+    #ratoVideo {
+        margin: 0 auto 20px;
+        width: 70%;
+    }
+
+/* CARDS (Grid 3 Coluna) */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        margin: 30px auto;
+    }
+
+    .card {
+        position: relative;
+        background-color: #1e1e1e;
+        border: 1px solid #51443a;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: transform 0.3s;
+        animation: surgir 0.8s ease backwards;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+    }
+
+    .card img {
+        display: block;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin: 0;
+    }
+
+    .card h3 {
+        color: #da7d20;
+        font-family: "Russo One", sans-serif;
+        font-weight: 400;
+        padding: 15px 20px 0;
+        margin: 0;
+    }
+
+    .card p {
+        padding: 8px 20px 20px;
+        margin: 0;
+    }
+
+    .numero {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #8e302b;
+        color: #ffffff;
+        font-weight: 700;
+        padding: 0 12px;
+        border-radius: 5px;
+    }
+
+    /* LISTAS */
+    main ul,
+    main ol {
+        padding-left: 35px;
+        margin: 25px 0;
+    }
+
+    main li {
+        padding-left: 5px;
+        margin-bottom: 10px;
+    }
+
+    main li::marker {
+        color: #d6b36a;
+    }
+
+/* FOOTER */
+    footer {
+        position: relative;
+        background-color: #101010;
+        border-top: 3px solid #8e302b;
+        padding: 35px 25px;
+        text-align: center;
+    }
+
+    footer h2 {
+        color: #d6b36a;
+        font-size: 1.7rem;
+    }
+
+    footer h3 {
+        color: #da7d20;
+        margin-top: 25px;
+    }
+
+    footer nav ul {
+        /*não sube mover os pontinhos da lista, então tirei, fico até melhor */
+        list-style: none;
+        padding: 0;
+    }
+
+    footer nav li {
+        margin: 10px 0;
+    }
+    
+
+    footer p {
+        color: #96918a;
+        font-size: 0.9rem;
+        margin: 10px 0;
+    }
+
+/* Animação dos Cards */
+    /*espero que esse conte como animação da atividade*/
+    @keyframes surgir {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+/* TABLET */
+    @media (max-width: 1024px) {
+        .ratoRei{
+            width: 60%;
+        }
+        header img {
+            max-width: 300px;
+        }
+
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+/* CELULAR */
+    @media (max-width: 600px) {
+        header {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        header img {
+            max-width: 100%;
+        }
+
+        .cards {
+            grid-template-columns: 1fr;
+        }
+
+        main {
+            padding: 0 15px;
+        }
+
+        .ratoRei {
+            width: 100%;
+        }
+
+        #ratoVideo {
+            width: 100%;
+        }
+>>>>>>> ebdb8b3c9c79e51a7e4ca3efbb9f70acb36541cc:Atividade-3/style.css
     }
